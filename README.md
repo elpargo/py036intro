@@ -20,7 +20,7 @@ Esto deberia de abrir una ventana similar a esta. De ahi puedes darle click a ca
 
 # Correr los ejemplos Sin Installar
 
-Ve a este URL github.com/elpargo/py036intro 
+Ve a este URL http://github.com/elpargo/py036intro 
 copia el url del notebook que quieres ver.
 ponlo en http://nbviewer.ipython.org
 
