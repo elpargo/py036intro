@@ -3,7 +3,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
-from  simple_polls.views import SurveyCreate
+from simple_polls.views import SurveyCreate
 
 urlpatterns = patterns('',
     # Examples:
