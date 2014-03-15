@@ -22,3 +22,13 @@ from django.shortcuts import render
 def environ_with_template(request):
 	context = {'environ': request.environ}
 	return render(request, 'environ.html', context)
+
+from django.views.generic.edit import CreateView
+from simple_polls.models import Survey
+from django.core.urlresolvers import reverse
+
+class SurveyCreate(CreateView):
+    model = Survey
+
+    def get_success_url(self):
+        return reverse('home')
