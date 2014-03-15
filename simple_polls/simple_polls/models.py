@@ -13,7 +13,7 @@ RATING_CHOICES = (
 
 class Survey(models.Model):
 	fullname = models.CharField(max_length=20)
- 	email = models.EmailField()
+ 	email = models.EmailField(unique=True)
 	rating = models.CharField(max_length=1,choices=RATING_CHOICES)
  	other_python_interests = models.CharField(max_length=500)
  	pyladies_interest = models.BooleanField()
