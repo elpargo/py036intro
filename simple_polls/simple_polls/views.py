@@ -16,3 +16,9 @@ def environ(request):
 		output.append(unicode(v))
 		output.append("</p>")
 	return HttpResponse("".join(output))
+
+from django.shortcuts import render
+
+def environ_with_template(request):
+	context = {'environ': request.environ}
+	return render(request, 'environ.html', context)
